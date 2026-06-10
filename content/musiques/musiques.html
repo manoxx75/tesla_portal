@@ -1,64 +1,77 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="s3xytheater - Section Musiques" />
+<meta name="description" content="Tesla Portal - Section Musiques">
 <title>Musiques</title>
-<style type="text/css">
-body {
-	background-color:#000000;
-	background-size: auto auto;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        color: #fff;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    /* Grille XXL */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        padding: 0;
+    }
+
+    /* Icônes */
+    .grid a img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        border-radius: 4px;
+        padding: 0;
+        transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    /* Effet hover premium */
+    .grid a img:hover {
+        transform: scale(1.10);
+        filter: drop-shadow(0 0 6px rgba(255,255,255,0.25));
+    }
+
+    /* Effet tactile Tesla */
+    .grid a img:active {
+        transform: scale(0.95);
+        opacity: 0.85;
+    }
+
+    /* Responsive Tesla-friendly */
+    @media (max-width: 900px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 </style>
 </head>
 
 <body>
-<table width="100%" height="100%" border="0">
-  <tbody>
-    <tr>
-      <td width="20%" height="18%"><a href="https://music.apple.com/fr/" target="_parent"><img src="./img/Apple-Music_T.gif" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://music.amazon.fr/" target="_parent"><img src="./img/amazon-music_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.deezer.com/fr/" target="_parent"><img src="./img/deezer_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.qobuz.com/signin" target="_parent"><img src="./img/Qobuz_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://music.youtube.com/" target="_parent"><img src="./img/youtube_music.png" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://open.spotify.com/" target="_parent"><img src="./img/spotify.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="10%">&nbsp;</td>
 
-    </tr>
-    </tbody>
-</table>
+<div class="grid">
+
+    <a href="https://music.apple.com/fr/" target="_parent"><img src="./img/Apple-Music_T.gif"></a>
+    <a href="https://music.amazon.fr/" target="_parent"><img src="./img/amazon-music_T.png"></a>
+    <a href="https://www.deezer.com/fr/" target="_parent"><img src="./img/deezer_T.png"></a>
+    <a href="https://www.qobuz.com/signin" target="_parent"><img src="./img/Qobuz_T.png"></a>
+    <a href="https://music.youtube.com/" target="_parent"><img src="./img/youtube_music.png"></a>
+
+    <a href="https://open.spotify.com/" target="_parent"><img src="./img/spotify.png"></a>
+
+
+</div>
+
 </body>
 </html>

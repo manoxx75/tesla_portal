@@ -1,120 +1,127 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="s3xytheater - Section Cinéma" />
+<meta name="description" content="Tesla Portal - Section Cinéma">
 <title>Cinéma</title>
-<style type="text/css">
-body {
-	background-color:#000000;
-	background-size: auto auto;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        color: #fff;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    padding: 0;
 }
+
+.grid a img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: 4px;
+    padding: 0;
+}
+
+.grid a img:hover {
+    transform: scale(1.10);
+}
+    /* Responsive Tesla-friendly */
+    @media (max-width: 900px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 </style>
 </head>
 
 <body>
-<table width="100%" height="100%" border="0">
-  <tbody>
-    <tr>
-      <td width="20%" height="18%"><a href="https://app.plex.tv" target="_parent"><img src="./img/plex.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.canalplus.com/" target="_parent"><img src="./img/MyCanal_T.gif" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.disneyplus.com/fr-fr" target="_parent"><img src="./img/disney_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://tv.apple.com/fr" target="_parent"><img src="./img/Apple-TV-Plus_T.gif" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.primevideo.com/" target="_parent"><img src="./img/Amazon_Prime_Video_T.gif" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.netflix.com/fr" target="_parent"><img src="./img/Netflix.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.youtube.com" target="_parent"><img src="./img/youtube_T.gif" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.paramountplus.com/fr/" target="_parent"><img src="./img/paramountPlus.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://replay.gulli.fr/Direct" target="_parent"><img src="./img/Gulli_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tntendirect.com" target="_parent"><img src="./img/TNT_en_direct_T.gif" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      
-      <td width="20%" height="18%"><a href="https://fr.euronews.com/live" target="_parent"><img src="./img/Euronews_T.gif" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.lci.fr/direct/" target="_parent"><img src="./img/LCI_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://tv.free.fr/" target="_parent"><img src="./img/free-tv.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://auvio.rtbf.be/" target="_parent"><img src="./img/RTBF-Auvio.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://www.pickx.be/fr" target="_parent"><img src="./img/Pickx.png" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.justwatch.com/fr" target="_parent"><img src="./img/JustWatch.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.bouyguestelecom.fr/tv-direct/" target="_parent"><img src="./img/bouygues-tv.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.filmotv.fr/" target="_parent"><img src="./img/FilmoTV.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://animedigitalnetwork.fr/" target="_parent"><img src="./img/ADN.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://app.molotov.tv/" target="_parent"><img src="./img/Molotov_T.png" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.eurosportplayer.com/" target="_parent"><img src="./img/eurosport_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.rmcsport.tv/" target="_parent"><img src="./img/RMC_Sport.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://pluto.tv/fr/" target="_parent"><img src="./img/pluto_tv.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.crunchyroll.com/fr" target="_parent"><img src="./img/crunchyroll.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.ocs.fr/" target="_parent"><img src="./img/OCS.png" width="100%" alt=""/></a></td>    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.twitch.tv/" target="_parent"><img src="./img/Twitch.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.france.tv/" target="_parent"><img src="./img/FranceTV.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://tvplayer.com/FR/home" target="_parent"><img src="./img/tvPlayer.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.nrj-play.fr/" target="_parent"><img src="./img/nrjPlay.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://tv.sfr.fr/" target="_parent"><img src="./img/sfr-tv.png" width="100%" alt=""/></a></td>
-	  </tr>
-	<tr>
-      <td width="20%" height="18%"><a href="https://www.6play.fr/" target="_parent"><img src="./img/m6plus.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://chaines-tv.orange.fr/" target="_parent"><img src="./img/orangeTV.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://video-a-la-demande.orange.fr/" target="_parent"><img src="./img/orangeVOD.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.hayu.com/" target="_parent"><img src="./img/hayu.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.lacinetek.com/fr" target="_parent"><img src="./img/lacinetek.png" width="100%" alt=""/></a></td>
-	</tr>
-	<tr>
-      <td width="20%" height="18%"><a href="https://madelen.ina.fr/" target="_parent"><img src="./img/ina.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://rakuten.tv/fr" target="_parent"><img src="./img/rakutenTV.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://mubi.com/fr" target="_parent"><img src="./img/mubi.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.whatsuptv.app/" target="_parent"><img src="./img/whatsuptv.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://zattoo.com/ch/fr" target="_parent"><img src="./img/zattoo.png" width="100%" alt=""/></a></td>
-	</tr>
-	<tr>
-      <td width="20%" height="18%"><a href="https://www.arte.tv/fr/" target="_parent"><img src="./img/arte_T.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.bfmtv.com/mediaplayer/live-video/" target="_parent"><img src="./img/BFM-TV.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.cnews.fr/le-direct" target="_parent"><img src="./img/cnews.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.rts.ch/play/tv" target="_parent"><img src="./img/playRTS.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.playsuisse.ch/fr" target="_parent"><img src="./img/playSuisse.png" width="100%" alt=""/></a></td>
 
-	</tr>
-	<tr>
-      <td width="20%" height="18%"><a href="http://app.emby.media/#!/home" target="_parent"><img src="./img/emby.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://www.tf1.fr/" target="_parent"><img src="./img/tf1plus.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.crave.ca/fr" target="_parent"><img src="./img/crave.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://tv.salt.ch/" target="_parent"><img src="./img/salt-tv.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://tvplus.voo.be/fr/" target="_parent"><img src="./img/vootv.png" width="100%" alt=""/></a></td>
-	</tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.rtlplay.be/" target="_parent"><img src="./img/rtl-play.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://www.max.com/fr/fr" target="_parent"><img src="./img/max-logo.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://www.dazn.com/fr-FR/" target="_parent"><img src="./img/Dazn.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://jellyfin.org/" target="_parent"><img src="./img/jellyfin.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://plus.ligue1.com/" target="_parent"><img src="./img/ligue1.png" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://orangetvgo.be/" target="_parent"><img src="./img/orangeBE.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%">&nbsp;</td>
-	  <td width="20%" height="18%">&nbsp;</td>
-	  <td width="20%" height="18%">&nbsp;</td>
-	  <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="http://webtv.iptvsmarters.com/" target="_parent"><img src="./img/iptvsmarters2.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="http://webtv-new.iptvsmarters.com/" target="_parent"><img src="./img/iptvsmarters.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://pleyr.net/" target="_parent"><img src="./img/pleyr.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%">&nbsp;</td>
-	  <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-	<tr>
-		<td width="20%" height="10%">&nbsp;</td>
-    </tr>
-    </tbody>
-</table>
+<div class="grid">
+
+    <a href="https://app.plex.tv" target="_parent"><img src="./img/plex.png"></a>
+    <a href="https://www.canalplus.com/" target="_parent"><img src="./img/MyCanal_T.gif"></a>
+    <a href="https://www.disneyplus.com/fr-fr" target="_parent"><img src="./img/disney_T.png"></a>
+    <a href="https://tv.apple.com/fr" target="_parent"><img src="./img/Apple-TV-Plus_T.gif"></a>
+    <a href="https://www.primevideo.com/" target="_parent"><img src="./img/Amazon_Prime_Video_T.gif"></a>
+
+    <a href="https://www.netflix.com/fr" target="_parent"><img src="./img/Netflix.png"></a>
+    <a href="https://www.youtube.com" target="_parent"><img src="./img/youtube_T.gif"></a>
+    <a href="https://www.paramountplus.com/fr/" target="_parent"><img src="./img/paramountPlus.png"></a>
+    <a href="https://replay.gulli.fr/Direct" target="_parent"><img src="./img/Gulli_T.png"></a>
+    <a href="https://www.tntendirect.com" target="_parent"><img src="./img/TNT_en_direct_T.gif"></a>
+
+    <a href="https://fr.euronews.com/live" target="_parent"><img src="./img/Euronews_T.gif"></a>
+    <a href="https://www.lci.fr/direct/" target="_parent"><img src="./img/LCI_T.png"></a>
+    <a href="https://tv.free.fr/" target="_parent"><img src="./img/free-tv.png"></a>
+    <a href="https://auvio.rtbf.be/" target="_parent"><img src="./img/RTBF-Auvio.png"></a>
+    <a href="https://www.pickx.be/fr" target="_parent"><img src="./img/Pickx.png"></a>
+
+    <a href="https://www.justwatch.com/fr" target="_parent"><img src="./img/JustWatch.png"></a>
+    <a href="https://www.bouyguestelecom.fr/tv-direct/" target="_parent"><img src="./img/bouygues-tv.png"></a>
+    <a href="https://www.filmotv.fr/" target="_parent"><img src="./img/FilmoTV.png"></a>
+    <a href="https://animedigitalnetwork.fr/" target="_parent"><img src="./img/ADN.png"></a>
+    <a href="https://app.molotov.tv/" target="_parent"><img src="./img/Molotov_T.png"></a>
+
+    <a href="https://www.eurosportplayer.com/" target="_parent"><img src="./img/eurosport_T.png"></a>
+    <a href="https://www.rmcsport.tv/" target="_parent"><img src="./img/RMC_Sport.png"></a>
+    <a href="https://pluto.tv/fr/" target="_parent"><img src="./img/pluto_tv.png"></a>
+    <a href="https://www.crunchyroll.com/fr" target="_parent"><img src="./img/crunchyroll.png"></a>
+    <a href="https://www.ocs.fr/" target="_parent"><img src="./img/OCS.png"></a>
+
+    <a href="https://www.twitch.tv/" target="_parent"><img src="./img/Twitch.png"></a>
+    <a href="https://www.france.tv/" target="_parent"><img src="./img/FranceTV.png"></a>
+    <a href="https://tvplayer.com/FR/home" target="_parent"><img src="./img/tvPlayer.png"></a>
+    <a href="https://www.nrj-play.fr/" target="_parent"><img src="./img/nrjPlay.png"></a>
+    <a href="https://tv.sfr.fr/" target="_parent"><img src="./img/sfr-tv.png"></a>
+
+    <a href="https://www.6play.fr/" target="_parent"><img src="./img/m6plus.png"></a>
+    <a href="https://chaines-tv.orange.fr/" target="_parent"><img src="./img/orangeTV.png"></a>
+    <a href="https://video-a-la-demande.orange.fr/" target="_parent"><img src="./img/orangeVOD.png"></a>
+    <a href="https://www.hayu.com/" target="_parent"><img src="./img/hayu.png"></a>
+    <a href="https://www.lacinetek.com/fr" target="_parent"><img src="./img/lacinetek.png"></a>
+
+    <a href="https://madelen.ina.fr/" target="_parent"><img src="./img/ina.png"></a>
+    <a href="https://rakuten.tv/fr" target="_parent"><img src="./img/rakutenTV.png"></a>
+    <a href="https://mubi.com/fr" target="_parent"><img src="./img/mubi.png"></a>
+    <a href="https://www.whatsuptv.app/" target="_parent"><img src="./img/whatsuptv.png"></a>
+    <a href="https://zattoo.com/ch/fr" target="_parent"><img src="./img/zattoo.png"></a>
+
+    <a href="https://www.arte.tv/fr/" target="_parent"><img src="./img/arte_T.png"></a>
+    <a href="https://www.bfmtv.com/mediaplayer/live-video/" target="_parent"><img src="./img/BFM-TV.png"></a>
+    <a href="https://www.cnews.fr/le-direct" target="_parent"><img src="./img/cnews.png"></a>
+    <a href="https://www.rts.ch/play/tv" target="_parent"><img src="./img/playRTS.png"></a>
+    <a href="https://www.playsuisse.ch/fr" target="_parent"><img src="./img/playSuisse.png"></a>
+
+    <a href="http://app.emby.media/#!/home" target="_parent"><img src="./img/emby.png"></a>
+    <a href="https://www.tf1.fr/" target="_parent"><img src="./img/tf1plus.png"></a>
+    <a href="https://www.crave.ca/fr" target="_parent"><img src="./img/crave.png"></a>
+    <a href="https://tv.salt.ch/" target="_parent"><img src="./img/salt-tv.png"></a>
+    <a href="https://tvplus.voo.be/fr/" target="_parent"><img src="./img/vootv.png"></a>
+
+    <a href="https://www.rtlplay.be/" target="_parent"><img src="./img/rtl-play.png"></a>
+    <a href="https://www.max.com/fr/fr" target="_parent"><img src="./img/max-logo.png"></a>
+    <a href="https://www.dazn.com/fr-FR/" target="_parent"><img src="./img/Dazn.png"></a>
+    <a href="https://jellyfin.org/" target="_parent"><img src="./img/jellyfin.png"></a>
+    <a href="https://plus.ligue1.com/" target="_parent"><img src="./img/ligue1.png"></a>
+
+    <a href="https://orangetvgo.be/" target="_parent"><img src="./img/orangeBE.png"></a>
+    <a href="http://webtv.iptvsmarters.com/" target="_parent"><img src="./img/iptvsmarters2.png"></a>
+    <a href="http://webtv-new.iptvsmarters.com/" target="_parent"><img src="./img/iptvsmarters.png"></a>
+    <a href="https://pleyr.net/" target="_parent"><img src="./img/pleyr.png"></a>
+
+</div>
+
 </body>
 </html>

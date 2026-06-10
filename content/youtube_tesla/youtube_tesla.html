@@ -1,63 +1,79 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="s3xytheater - Section Youtubeurs" />
+<meta name="description" content="Tesla Portal - Section Youtubeurs">
 <title>Youtubeurs</title>
-<style type="text/css">
-body {
-	background-color:#000000;
-	background-size: auto auto;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        color: #fff;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    /* Grille XXL */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        padding: 0;
+    }
+
+    /* Icônes */
+    .grid a img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        border-radius: 4px;
+        padding: 0;
+        transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    /* Effet hover premium */
+    .grid a img:hover {
+        transform: scale(1.10);
+        filter: drop-shadow(0 0 6px rgba(255,255,255,0.25));
+    }
+
+    /* Effet tactile Tesla */
+    .grid a img:active {
+        transform: scale(0.95);
+        opacity: 0.85;
+    }
+
+    /* Responsive Tesla-friendly */
+    @media (max-width: 900px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 </style>
 </head>
 
 <body>
-<table width="100%" height="100%" border="0">
-  <tbody>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.youtube.com/channel/UC_3jCr_eob9Lh-bb1ZFFv4A" target="_parent"><img src="./img/Nicolas_Tesla.png" width="100%" alt=""/></a></td>
-	  <td width="20%" height="18%"><a href="https://www.youtube.com/c/TESLA3steef/" target="_parent"><img src="./img/Tesla3.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.youtube.com/c/ElectronLibre" target="_parent"><img src="./img/Electron_Libre.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.youtube.com/c/NuageMagique/" target="_parent"><img src="./img/Nuage_Magique.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.youtube.com/c/TheChoucrouteGarage/" target="_parent"><img src="./img/ChoucrouteGarage.png" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.a-c-c.fr/" target="_parent"><img src="acc.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.greendrive-accessories.com/fr/" target="_parent"><img src="green-drive.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://club-tesla.fr/" target="_parent"><img src="TOC.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-    <tr>
-      <td width="20%" height="10%">&nbsp;</td>
-    </tr>
-    </tbody>
-</table>
+
+<div class="grid">
+
+    <a href="https://www.youtube.com/channel/UC_3jCr_eob9Lh-bb1ZFFv4A" target="_parent"><img src="./img/Nicolas_Tesla.png"></a>
+    <a href="https://www.youtube.com/c/TESLA3steef/" target="_parent"><img src="./img/Tesla3.png"></a>
+    <a href="https://www.youtube.com/c/ElectronLibre" target="_parent"><img src="./img/Electron_Libre.png"></a>
+    <a href="https://www.youtube.com/c/NuageMagique/" target="_parent"><img src="./img/Nuage_Magique.png"></a>
+    <a href="https://www.youtube.com/c/TheChoucrouteGarage/" target="_parent"><img src="./img/ChoucrouteGarage.png"></a>
+
+    <a href="https://www.a-c-c.fr/" target="_parent"><img src="./img/acc.png"></a>
+    <a href="https://www.greendrive-accessories.com/fr/" target="_parent"><img src="./img/green-drive.png"></a>
+    <a href="https://club-tesla.fr/" target="_parent"><img src="./img/TOC.png"></a>
+
+
+</div>
+
 </body>
 </html>

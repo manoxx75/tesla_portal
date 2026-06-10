@@ -1,53 +1,115 @@
 <!doctype html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="s3xytheater - Section Notices" />
+<meta name="description" content="Tesla Portal - Section Notices">
 <title>Notices</title>
-<style type="text/css">
-body {
-	background-color:#000000;
-	background-size: auto auto;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
+
+<style>
+    body {
+        margin: 0;
+        background: #000;
+        color: #fff;
+        font-family: "Helvetica Neue", sans-serif;
+    }
+
+    /* Grille XXL */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0;
+        padding: 0;
+    }
+
+    /* Icônes */
+    .grid a img {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+        border-radius: 4px;
+        padding: 0;
+        transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    /* Effet hover premium */
+    .grid a img:hover {
+        transform: scale(1.10);
+        filter: drop-shadow(0 0 6px rgba(255,255,255,0.25));
+    }
+
+    /* Effet tactile Tesla */
+    .grid a img:active {
+        transform: scale(0.95);
+        opacity: 0.85;
+    }
+
+    /* Bloc message centré */
+    .message {
+        grid-column: span 5;
+        text-align: center;
+        padding: 20px;
+        font-size: 1rem;
+        opacity: 0.85;
+        line-height: 1.4;
+    }
+
+    /* Responsive Tesla-friendly */
+    @media (max-width: 900px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .message {
+            grid-column: span 3;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .message {
+            grid-column: span 2;
+        }
+    }
 </style>
 </head>
 
 <body>
-<table width="100%" height="100%" border="0">
-  <tbody>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/2017_2023_model3/fr_fr/" target="_parent"><img src="./img/2017-2023_Model3.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/2020_2024_modely/fr_fr/" target="_parent"><img src="./img/2020-2024_ModelY.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/2012_2020_models/fr_fr/" target="_parent"><img src="./img/2012-2020_ModelS.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/2015_2020_modelx/fr_fr/" target="_parent"><img src="./img/2015-2020_ModelX.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><center><a href="https://www.google.fr" target="_parent"><img src="./img/Google_T.gif" width="100%" alt=""/></a></center></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/model3/fr_fr/" target="_parent"><img src="./img/Model3.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/modely/fr_fr/" target="_parent"><img src="./img/ModelY.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/models/fr_fr/" target="_parent"><img src="./img/ModelS.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/modelx/fr_fr/" target="_parent"><img src="./img/ModelX.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.tesla.com/ownersmanual/cybertruck/fr_ca/" target="_parent"><img src="./img/Cybertruck.png" width="100%" alt=""/></a></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%"><a href="https://www.s3xytheater.fr/Mobile_Connector_Touchscreen_EU_R20160317_en_UK.html"><img src="./img/UMC-Gen1.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.s3xytheater.fr/Gen2_Mobile_Connector_fr_EU.html"><img src="./img/UMC-Gen2.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.s3xytheater.fr/Corded_Mobile_Connector_Owners_Manual_en_EU.html"><img src="./img/UMC-Tri.png" width="100%" alt=""/></a></td>
-      <td width="20%" height="18%"><a href="https://www.s3xytheater.fr/CCS_Combo_2_Adapter_fr-FR.html"><img src="./img/CCS_Adapter.png" width="100%" alt=""/></a></td>
-		<td width="20%" height="18%"><center><p style="color:white;">Mon lien de parainage:<br><a href="https://www.tesla.com/fr_fr/referral/eric477965" style="color:white" target="_parent">https://www.tesla.com/fr_fr/referral/eric477965</a><br><br>Si vous voulez que j'ajoute des liens ou notices, contactez moi par mail: admin@s3xytheater.fr</p></center></td>
-    </tr>
-    <tr>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-      <td width="20%" height="18%">&nbsp;</td>
-    </tr>
-</tbody>
-</table>
+
+<div class="grid">
+
+    <!-- Ligne 1 -->
+    <a href="https://www.tesla.com/ownersmanual/2017_2023_model3/fr_fr/" target="_parent"><img src="./img/2017-2023_Model3.png"></a>
+    <a href="https://www.tesla.com/ownersmanual/2020_2024_modely/fr_fr/" target="_parent"><img src="./img/2020-2024_ModelY.png"></a>
+    <a href="https://www.tesla.com/ownersmanual/2012_2020_models/fr_fr/" target="_parent"><img src="./img/2012-2020_ModelS.png"></a>
+    <a href="https://www.tesla.com/ownersmanual/2015_2020_modelx/fr_fr/" target="_parent"><img src="./img/2015-2020_ModelX.png"></a>
+    <a href="https://www.google.fr" target="_parent"><img src="./img/Google_T.gif"></a>
+
+    <!-- Ligne 2 -->
+    <a href="https://www.tesla.com/ownersmanual/model3/fr_fr/" target="_parent"><img src="./img/Model3.png"></a>
+    <a href="https://www.tesla.com/ownersmanual/modely/fr_fr/" target="_parent"><img src="./img/ModelY.png"></a>
+    <a href="https://www.tesla.com/ownersmanual/models/fr_fr/" target="_parent"><img src="./img/ModelS.png"></a>
+    <a href="https://www.tesla.com/ownersmanual/modelx/fr_fr/" target="_parent"><img src="./img/ModelX.png"></a>
+    <a href="https://www.tesla.com/ownersmanual/cybertruck/fr_ca/" target="_parent"><img src="./img/Cybertruck.png"></a>
+
+    <!-- Ligne 3 -->
+    <a href="https://www.s3xytheater.fr/Mobile_Connector_Touchscreen_EU_R20160317_en_UK.html" target="_parent"><img src="./img/UMC-Gen1.png"></a>
+    <a href="https://www.s3xytheater.fr/Gen2_Mobile_Connector_fr_EU.html" target="_parent"><img src="./img/UMC-Gen2.png"></a>
+    <a href="https://www.s3xytheater.fr/Corded_Mobile_Connector_Owners_Manual_en_EU.html" target="_parent"><img src="./img/UMC-Tri.png"></a>
+    <a href="https://www.s3xytheater.fr/CCS_Combo_2_Adapter_fr-FR.html" target="_parent"><img src="./img/CCS_Adapter.png"></a>
+
+    <!-- Message -->
+    <div class="message">
+        Mon lien de parrainage :<br>
+        <a href="https://www.tesla.com/fr_fr/referral/eric477965" style="color:white" target="_parent">
+            https://www.tesla.com/fr_fr/referral/eric477965
+        </a>
+        <br><br>
+        Si vous voulez que j'ajoute des liens ou notices,<br>
+        contactez‑moi par mail : wander.eric@icloud.com
+    </div>
+
+</div>
+
 </body>
 </html>

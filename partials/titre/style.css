@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: "Helvetica Neue", sans-serif;
+}
+
+/* BARRE DE TITRE */
+.topbar {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 20px; /* plus de padding vertical */
+}
+
+/* ZONE DES ICONES */
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Ligne des outils limitée à 50px */
+.tools {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.search-group {
+    display: flex;
+    gap: 5px;
+    width: 20%;
+}
+
+.search-group input {
+    width: 100%;
+    background: #000;
+    border: 1px solid #444;
+    color: white;
+    padding: 5px;
+}
+
+.search-group button {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.search-group button:hover {
+    background: #444;
+}
+
+.mail {
+    opacity: 0.8;
+}
